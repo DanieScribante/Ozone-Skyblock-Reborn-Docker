@@ -13,10 +13,6 @@ env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
 
-permissions:
-  contents: read
-  packages: write
-
 jobs:
   docker:
     runs-on: ubuntu-latest
@@ -35,18 +31,17 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
-          password: ${{ github.token }}
+          password: ${{ secrets.GITHUB_TOKEN }}
       - name: Extract metadata (tags, labels) for Docker
         id: meta
         uses: docker/metadata-action@v5
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           tags: type=sha
-      - name: Lowercase the repo name and username
-        run: echo "REPO=${GITHUB_REPOSITORY,,}" >>${GITHUB_ENV}
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
+          context: .
           push: true
-          tags: ghcr.io/${{ env.REPO }}:${{ github.sha }}
-          file: ./Dockerfile
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
