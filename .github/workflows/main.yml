@@ -11,7 +11,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository }}
+  IMAGE_NAME: ${{ github.repository_owner }}/main
 
 jobs:
   docker:
@@ -37,7 +37,9 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
-          tags: type=sha
+          tags: |
+            type=raw,value=latest
+            type=sha
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
