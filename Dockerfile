@@ -17,8 +17,8 @@ WORKDIR /data
 
 EXPOSE 25565/tcp
 
-ENV MOTD "Ozone Skyblock Reborn v1.10 Server Powered by Docker"
-ENV LEVEL world
-ENV JVM_OPTS "-Xms8192m -Xmx12288m"
+ENV MOTD="Ozone Skyblock Reborn v1.10 Server Powered by Docker"
+ENV LEVEL=world
+ENV JVM_OPTS="-Xms8192m -Xmx12288m"
 
 CMD ["/launch.sh"]
