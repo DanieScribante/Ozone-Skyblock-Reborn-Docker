@@ -1,12 +1,3 @@
-Server Download: https://drive.google.com/drive/folders/1iwMkd7_ez6o_sm-37JGeO6samSz49JCu
-Mod Page: https://www.curseforge.com/minecraft/modpacks/ozone-skyblock-reborn
-
-Place server [modpacks downloaded from CurseForge](https://www.curseforge.com/minecraft/modpacks) in this directory.
-
-The example [`docker-compose-curseforge.yml`](../docker-compose-curseforge.yml) references a modpack downloaded from <https://www.curseforge.com/minecraft/modpacks/skyfactory-4/files/3012800>.
-
-
---
 
 # [FTB Skies Expert](https://feed-the-beast.com/modpacks/117-ftb-skies-expert) By FTB
 
