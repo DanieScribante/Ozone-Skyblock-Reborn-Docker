@@ -1,18 +1,18 @@
-Server Download: https://drive.google.com/drive/folders/1iwMkd7_ez6o_sm-37JGeO6samSz49JCu
+<!-- Server Download: https://drive.google.com/drive/folders/1iwMkd7_ez6o_sm-37JGeO6samSz49JCu
 Mod Page: https://www.curseforge.com/minecraft/modpacks/ozone-skyblock-reborn
 
 Place server [modpacks downloaded from CurseForge](https://www.curseforge.com/minecraft/modpacks) in this directory.
 
-The example [`docker-compose-curseforge.yml`](../docker-compose-curseforge.yml) references a modpack downloaded from <https://www.curseforge.com/minecraft/modpacks/skyfactory-4/files/3012800>.
+The example [`docker-compose-curseforge.yml`](../docker-compose-curseforge.yml) references a modpack downloaded from <https://www.curseforge.com/minecraft/modpacks/skyfactory-4/files/3012800>. -->
 
 
---
+<!-- --
 
-# [FTB Skies Expert](https://feed-the-beast.com/modpacks/117-ftb-skies-expert) By FTB
+# [FTB Skies Expert](https://feed-the-beast.com/modpacks/117-ftb-skies-expert) By FTB -->
 
 <!-- toc -->
 
-- [Description](#description)
+<!-- - [Description](#description)
 - [Requirements](#requirements)
 - [Options](#options)
   * [Adding Minecraft Operators](#adding-minecraft-operators)
@@ -20,11 +20,11 @@ The example [`docker-compose-curseforge.yml`](../docker-compose-curseforge.yml) 
   * [Accept the EULA](#accept-the-eula)
   * [Permissions of Files](#permissions-of-files)
   * [Resetting](#resetting)
-- [Source](#source)
+- [Source](#source) -->
 
 <!-- tocstop -->
 
-## Description
+<!-- ## Description
 
 This container is built to run on an [Unraid](https://unraid.net) server, outside of that your milliage will vary.
 
@@ -75,4 +75,8 @@ Docker: https://github.com/Robonau/docker-ftbskies-expert
 
 Original Template is by [Goobaroo](https://github.com/Goobaroo/docker-ftbskies)
 
-Workflows partially from [math7935](https://github.com/math7935/docker-ftbskies-expert)
+Workflows partially from [math7935](https://github.com/math7935/docker-ftbskies-expert) -->
+
+# Unraid Docker Container for Ozone Skyblock Reborn
+
+TODO
