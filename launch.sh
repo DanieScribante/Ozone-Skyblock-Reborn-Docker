@@ -34,7 +34,7 @@ fi
 if ! [[ -f serverinstall_${ID}_${VER} ]]; then
   curl -L "https://drive.usercontent.google.com/download?id=1wg9bsAbIhV9kRaqLdiWXynpVDGo5khWB&confirm=xxx" -o ServerFiles.zip
   unzip ServerFiles.zip
-  mv "Ozone Skyblock Reborn Server ${FilesVer}" ./
+  mv Ozone\ Skyblock\ Reborn\ Server\ ${FilesVer} ./
 fi
 
 #-------------------------------------------------------
