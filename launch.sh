@@ -31,10 +31,12 @@ fi
 #   rm -f ./mods/entity_model_features_forge_*.jar ./mods/entity_texture_features_forge_*.jar
 # fi
 
-if ! [[ -f serverinstall_${ID}_${VER} ]]; then
+if ! [[ -f run.sh ]]; then
   curl -L "https://drive.usercontent.google.com/download?id=1wg9bsAbIhV9kRaqLdiWXynpVDGo5khWB&confirm=xxx" -o ServerFiles.zip
   unzip ServerFiles.zip
   mv Ozone\ Skyblock\ Reborn\ Server\ ${FilesVer}/* ./
+  rm Ozone\ Skyblock\ Reborn\ Server\ ${FilesVer}
+  rm ServerFiles.zip
 fi
 
 #-------------------------------------------------------
