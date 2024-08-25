@@ -31,10 +31,12 @@ fi
 # fi
 
 if ! [[ -f serverinstall_${ID}_${VER} ]]; then
-  curl -Lo serverinstall_${ID}_${VER} https://drive.google.com/file/d/1wg9bsAbIhV9kRaqLdiWXynpVDGo5khWB/view?usp=drive_link
-  chmod +x serverinstall_${ID}_${VER}
-   ./serverinstall_${ID}_${VER} --path /data --nojava
-  rm -f ./mods/entity_model_features_forge_*.jar ./mods/entity_texture_features_forge_*.jar
+  curl -L "https://drive.usercontent.google.com/download?id=1wg9bsAbIhV9kRaqLdiWXynpVDGo5khWB&confirm=xxx" serverinstall_${ID}_${VER}
+  sudo apt-get install unzip
+  unzip serverinstall_${ID}_${VER}.zip
+  # chmod +x serverinstall_${ID}_${VER}
+  #  ./serverinstall_${ID}_${VER} --path /data --nojava
+  # rm -f ./mods/entity_model_features_forge_*.jar ./mods/entity_texture_features_forge_*.jar
 fi
 
 #-------------------------------------------------------
