@@ -30,13 +30,12 @@ fi
 #   rm -f ./mods/entity_model_features_forge_*.jar ./mods/entity_texture_features_forge_*.jar
 # fi
 
-# This might not be needed as we can just crash the runner and copy the files manually, maybe.
-
-# if [[ install.txt ]]; then
-#   chmod +x ./Modpacks/run.sh
-#    ./Modpacks/run.sh --path /data --nojava # I think this is used to set the relative path link
-#   rm -f install.txt
-# fi
+if ! [[ -f serverinstall_${ID}_${VER} ]]; then
+  curl -Lo serverinstall_${ID}_${VER} https://drive.google.com/file/d/1wg9bsAbIhV9kRaqLdiWXynpVDGo5khWB/view?usp=drive_link
+  chmod +x serverinstall_${ID}_${VER}
+   ./serverinstall_${ID}_${VER} --path /data --nojava
+  rm -f ./mods/entity_model_features_forge_*.jar ./mods/entity_texture_features_forge_*.jar
+fi
 
 #-------------------------------------------------------
 
