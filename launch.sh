@@ -9,6 +9,7 @@ fi
 
 ID=117
 VER=11927
+FilesVer=1.10.1
 
 cd /data
 
@@ -32,11 +33,8 @@ fi
 
 if ! [[ -f serverinstall_${ID}_${VER} ]]; then
   curl -L "https://drive.usercontent.google.com/download?id=1wg9bsAbIhV9kRaqLdiWXynpVDGo5khWB&confirm=xxx" -o ServerFiles.zip
-  # sudo apt-get install unzip
-  # unzip serverinstall_${ID}_${VER}.zip
-  # chmod +x serverinstall_${ID}_${VER}
-  #  ./serverinstall_${ID}_${VER} --path /data --nojava
-  # rm -f ./mods/entity_model_features_forge_*.jar ./mods/entity_texture_features_forge_*.jar
+  unzip ServerFiles.zip
+  mv "Ozone Skyblock Reborn Server ${FilesVer}" ./
 fi
 
 #-------------------------------------------------------
