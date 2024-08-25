@@ -31,7 +31,7 @@ fi
 # fi
 
 if ! [[ -f serverinstall_${ID}_${VER} ]]; then
-  curl -L "https://drive.usercontent.google.com/download?id=1wg9bsAbIhV9kRaqLdiWXynpVDGo5khWB&confirm=xxx" -o ServerFiles
+  curl -L "https://drive.usercontent.google.com/download?id=1wg9bsAbIhV9kRaqLdiWXynpVDGo5khWB&confirm=xxx" -o ServerFiles.zip
   # sudo apt-get install unzip
   # unzip serverinstall_${ID}_${VER}.zip
   # chmod +x serverinstall_${ID}_${VER}
