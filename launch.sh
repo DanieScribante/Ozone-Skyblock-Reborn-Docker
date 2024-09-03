@@ -9,7 +9,7 @@ fi
 
 ID=117
 VER=11927
-FilesVer=1.10.1
+FilesVer=1.10.2
 
 cd /data
 
@@ -31,11 +31,10 @@ fi
 #   rm -f ./mods/entity_model_features_forge_*.jar ./mods/entity_texture_features_forge_*.jar
 # fi
 
-if ! [[ -f run.sh ]]; then
-  curl -L "https://drive.usercontent.google.com/download?id=1wg9bsAbIhV9kRaqLdiWXynpVDGo5khWB&confirm=xxx" -o ServerFiles.zip
+if ! [[ -f "Ozone Skyblock Reborn Server ${FilesVer}" ]]; then
+  curl -L "https://drive.usercontent.google.com/download?id=1C7RsFEc4nEIDBlIZ1MxMj9Ye2e8iPJiG&confirm=xxx" -o ServerFiles.zip
   unzip ServerFiles.zip
   mv Ozone\ Skyblock\ Reborn\ Server\ ${FilesVer}/* ./
-  rm -r "Ozone Skyblock Reborn Server ${FilesVer}"
   rm ServerFiles.zip
 fi
 
