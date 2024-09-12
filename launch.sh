@@ -9,7 +9,7 @@ fi
 
 ID=117
 VER=11927
-FilesVer=1.10.2
+FilesVer=1.10.3
 
 cd /data
 
@@ -32,7 +32,8 @@ fi
 # fi
 
 if ! [[ -f "Ozone Skyblock Reborn Server ${FilesVer}" ]]; then
-  curl -L "https://drive.usercontent.google.com/download?id=1C7RsFEc4nEIDBlIZ1MxMj9Ye2e8iPJiG&confirm=xxx" -o ServerFiles.zip
+  rm -rf ./*
+  curl -L "https://drive.usercontent.google.com/download?id=1m5NCdQPqjKX9lxZ83VgkveDJVWKdWBvJ&confirm=xxx" -o ServerFiles.zip
   unzip ServerFiles.zip
   mv Ozone\ Skyblock\ Reborn\ Server\ ${FilesVer}/* ./
   rm ServerFiles.zip
