@@ -31,14 +31,14 @@ fi
 #   rm -f ./mods/entity_model_features_forge_*.jar ./mods/entity_texture_features_forge_*.jar
 # fi
 
-if ! [[ -f "Ozone Skyblock Reborn Server ${FilesVer}" ]]; then
+if ! [[ -f "OSR Server - ${FilesVer}" ]]; then
   mkdir todelete
   mv * todelete/
   mv todelete/world .
   rm -rf todelete
   curl -L "https://drive.usercontent.google.com/download?id=1YHJmOc2cpeD6OKHfVSPQ43iY2F2sdgrS&confirm=xxx" -o ServerFiles.zip
   unzip ServerFiles.zip
-  mv Ozone\ Skyblock\ Reborn\ Server\ ${FilesVer}/* ./
+  mv OSR\ Server\ -\ ${FilesVer}/* ./
   rm ServerFiles.zip
 fi
 
