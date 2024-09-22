@@ -33,7 +33,8 @@ fi
 
 if ! [[ -f "Ozone Skyblock Reborn Server ${FilesVer}" ]]; then
   # rm -rf !("world")
-  rm -r ./!(world)/
+  shopt -s extglob
+  rm -rf !(world)
   curl -L "https://drive.usercontent.google.com/download?id=1YHJmOc2cpeD6OKHfVSPQ43iY2F2sdgrS&confirm=xxx" -o ServerFiles.zip
   unzip ServerFiles.zip
   mv Ozone\ Skyblock\ Reborn\ Server\ ${FilesVer}/* ./
