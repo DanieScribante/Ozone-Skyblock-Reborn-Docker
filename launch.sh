@@ -36,7 +36,7 @@ if ! [[ -f "OSR Server - ${FilesVer}" ]]; then
   mv * todelete/
   mv todelete/world .
   rm -rf todelete
-  curl -L "https://drive.usercontent.google.com/download?id=1YHJmOc2cpeD6OKHfVSPQ43iY2F2sdgrS&confirm=xxx" -o ServerFiles.zip
+  curl -L "https://drive.usercontent.google.com/download?id=1a67QuG5BMz-lP8bpcs1JT1YCILrPpGvy&confirm=xxx" -o ServerFiles.zip
   unzip ServerFiles.zip
   mv OSR\ Server\ -\ ${FilesVer}/* ./
   rm ServerFiles.zip
