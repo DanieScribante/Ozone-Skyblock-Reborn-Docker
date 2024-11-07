@@ -39,7 +39,7 @@ if ! [[ -f "OSR Server - ${FilesVer}" ]]; then
   rm -rf todelete
   curl -L "https://drive.usercontent.google.com/download?id=1g2EoeOEMTbhIN-CAuiIu5mS7Tzke0Hkq&confirm=xxx" -o ServerFiles.zip
   unzip ServerFiles.zip
-  mv OSR\ ${FilesVer} -\ ${tempVar}/* ./
+  mv OSR\ 1.11.8\ -\ ${tempVar}/* ./
   rm ServerFiles.zip
 fi
 
