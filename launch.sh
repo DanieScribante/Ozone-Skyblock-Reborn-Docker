@@ -10,6 +10,7 @@ fi
 ID=117
 VER=11927
 FilesVer=1.11.8
+tempVar=Server
 
 cd /data
 
@@ -38,7 +39,7 @@ if ! [[ -f "OSR Server - ${FilesVer}" ]]; then
   rm -rf todelete
   curl -L "https://drive.usercontent.google.com/download?id=1g2EoeOEMTbhIN-CAuiIu5mS7Tzke0Hkq&confirm=xxx" -o ServerFiles.zip
   unzip ServerFiles.zip
-  mv OSR\ ${FilesVer}\ -\ Server\\* ./
+  mv OSR\ ${FilesVer}\ -\ ${tempVar}/* ./
   rm ServerFiles.zip
 fi
 
