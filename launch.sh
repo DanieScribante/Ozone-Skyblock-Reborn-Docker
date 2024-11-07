@@ -32,7 +32,7 @@ fi
 #   rm -f ./mods/entity_model_features_forge_*.jar ./mods/entity_texture_features_forge_*.jar
 # fi
 
-if ! [[ -f "OSR Server - ${FilesVer}" ]]; then
+if ! [[ -f "OSR 1.11.8  - Server" ]]; then
   mkdir todelete
   mv * todelete/
   mv todelete/world .
