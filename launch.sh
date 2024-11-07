@@ -9,7 +9,7 @@ fi
 
 ID=117
 VER=11927
-FilesVer=1.11.2
+FilesVer=1.11.8
 
 cd /data
 
@@ -36,9 +36,9 @@ if ! [[ -f "OSR Server - ${FilesVer}" ]]; then
   mv * todelete/
   mv todelete/world .
   rm -rf todelete
-  curl -L "https://drive.usercontent.google.com/download?id=1a67QuG5BMz-lP8bpcs1JT1YCILrPpGvy&confirm=xxx" -o ServerFiles.zip
+  curl -L "https://drive.usercontent.google.com/download?id=1g2EoeOEMTbhIN-CAuiIu5mS7Tzke0Hkq&confirm=xxx" -o ServerFiles.zip
   unzip ServerFiles.zip
-  mv OSR\ Server\ -\ ${FilesVer}/* ./
+  mv OSR\ ${FilesVer}\ -\ Server/* ./
   rm ServerFiles.zip
 fi
 
