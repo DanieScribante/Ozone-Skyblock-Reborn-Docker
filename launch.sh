@@ -34,10 +34,10 @@ fi
 
 if ! [[ -f Version_${FilesVer}.txt ]]; then
   mkdir todelete
-  ${FilesVer} > Version_${FilesVer}.txt
   mv * todelete/
   mv todelete/world .
   rm -rf todelete
+  touch Version_${FilesVer}.txt
   curl -L "https://drive.usercontent.google.com/download?id=1xwDl4lpHaeRi7hjPdxHV6JDegTf48BHA&confirm=xxx" -o ServerFiles.zip
   unzip ServerFiles.zip
   mv OSR\ Server\ -\ ${FilesVer}/* ./
