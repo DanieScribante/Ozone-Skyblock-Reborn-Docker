@@ -32,8 +32,9 @@ fi
 #   rm -f ./mods/entity_model_features_forge_*.jar ./mods/entity_texture_features_forge_*.jar
 # fi
 
-if ! [[ -f OSR\ Server\ -\ ${FilesVer} ]]; then
+if ! [[ -f Version_${FilesVer}.txt ]]; then
   mkdir todelete
+  touch Version_${FilesVer}.txt
   mv * todelete/
   mv todelete/world .
   rm -rf todelete
