@@ -9,7 +9,7 @@ fi
 
 ID=117
 VER=11927
-FilesVer=1.11.8
+FilesVer=1.12.2
 tempVar=Server
 
 cd /data
@@ -32,14 +32,14 @@ fi
 #   rm -f ./mods/entity_model_features_forge_*.jar ./mods/entity_texture_features_forge_*.jar
 # fi
 
-if ! [[ -f "OSR 1.11.8  - Server" ]]; then
+if ! [[ -f "OSR Server - ${FilesVer}" ]]; then
   mkdir todelete
   mv * todelete/
   mv todelete/world .
   rm -rf todelete
-  curl -L "https://drive.usercontent.google.com/download?id=1g2EoeOEMTbhIN-CAuiIu5mS7Tzke0Hkq&confirm=xxx" -o ServerFiles.zip
+  curl -L "https://drive.usercontent.google.com/download?id=1xwDl4lpHaeRi7hjPdxHV6JDegTf48BHA&confirm=xxx" -o ServerFiles.zip
   unzip ServerFiles.zip
-  mv "OSR 1.11.8  - Server"/* ./
+  mv OSR\ Server\ -\ ${FilesVer}/* ./
   rm ServerFiles.zip
 fi
 
