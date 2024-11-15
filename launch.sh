@@ -34,7 +34,7 @@ fi
 
 if ! [[ -f Version_${FilesVer}.txt ]]; then
   mkdir todelete
-  touch Version_${FilesVer}.txt
+  ${FilesVer} > Version_${FilesVer}.txt
   mv * todelete/
   mv todelete/world .
   rm -rf todelete
